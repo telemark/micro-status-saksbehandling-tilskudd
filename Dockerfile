@@ -24,6 +24,8 @@ WORKDIR "/src"
 # Install dependencies
 RUN npm install --production
 
+ENV NODE_ENV production
+
 # Expose 8080
 EXPOSE 8080
 
