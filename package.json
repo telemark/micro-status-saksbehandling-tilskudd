@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-tilskudd",
   "description": "Shows status for saksbehandling tilskudd",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "private": true,
   "author": {
@@ -52,7 +52,7 @@
     "coveralls": "2.11.16",
     "nsp": "2.6.3",
     "standard": "10.0.1",
-    "tap": "10.3.2"
+    "tap": "10.2.0"
   },
   "dependencies": {
     "got": "6.7.1",
