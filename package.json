@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-tilskudd",
   "description": "Shows status for saksbehandling tilskudd",
-  "version": "1.0.30",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.4.0"
+    "node": ">=8.9.3"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -21,7 +21,7 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro -p 8080",
-    "dev": "micro",
+    "dev": "micro-dev",
     "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
@@ -39,24 +39,26 @@
   "bugs": {
     "url": "https://github.com/telemark/micro-status-saksbehandling-tilskudd/issues"
   },
+  "homepage": "https://github.com/telemark/micro-status-saksbehandling-tilskudd#readme",
   "now": {
     "alias": "tilskudd.saksbehandling.status.t-fk.win",
     "env": {
       "NODE_ENV": "production"
+    },
+    "engines": {
+      "node": "8.9.3"
     }
-  },
-  "greenkeeper": {
-    "emails": false
   },
   "devDependencies": {
     "coveralls": "3.0.0",
+    "micro-dev": "2.1.1",
     "nsp": "3.1.0",
     "standard": "10.0.3",
     "tap": "11.0.1"
   },
   "dependencies": {
     "got": "8.0.1",
-    "marked": "0.3.9",
+    "markdown-it": "8.4.0",
     "micro": "9.0.2"
   }
 }
